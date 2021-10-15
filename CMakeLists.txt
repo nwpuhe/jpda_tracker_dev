@@ -10,8 +10,16 @@ set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 find_package(Eigen3 REQUIRED)
 find_package(OpenCV REQUIRED)
 
+message("--------------------")
+message(${OpenCV_INCLUDE_DIRS})
+message(${EIGEN3_INCLUDE_DIRS})
+message("--------------------")
 
-include_directories(${CMAKE_SOURCE_DIR/src})
+include_directories(
+    ${CMAKE_SOURCE_DIR/src}
+    ${EIGEN3_INCLUDE_DIRS}
+    ${OpenCV_INCLUDE_DIRS}
+)
 
 # link_directories()
 

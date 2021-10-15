@@ -4,6 +4,9 @@
 #include <vector>
 #include <string>
 
+#include "opencv2/highgui.hpp"
+#include ""
+
 std::map<int, std::vector<std::vector<std::string> > > petsReading(const std::string& _fn) {
     
     std::map<int, std::vector<std::vector<std::string> > > pets;
@@ -24,7 +27,7 @@ std::map<int, std::vector<std::vector<std::string> > > petsReading(const std::st
 int main(int argc, char* argv[]) {
 
     // std::map<int, std::vector<std::vector<std::string> > > detections = petsReading(); 
-    std::cerr << "Hello Wolrd!" << std::endl;   
+    std::cout << "Hello Wolrd!" << std::endl;   
 
     return 0;
 }
